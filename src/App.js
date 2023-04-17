@@ -7,6 +7,7 @@ import Classes from "./pages/Classes";
 import JoinUs from "./pages/JoinUs";
 import Navbar from "./components/Navbar";
 import Pricing from "./pages/Pricing";
+import Login from "./pages/login_page/Login"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/classes" element={<Classes />} />
         <Route path="/joinus" element={<JoinUs />} />
         <Route path="/pricing" element={<Pricing/>} />
+        <Route path="/login" element ={<Login/>} />
       </Routes>
     </div>
   );
