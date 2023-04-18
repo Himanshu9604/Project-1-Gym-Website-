@@ -6,7 +6,7 @@ import Blogs from "./pages/Blogs";
 // import Classes from "./pages/Classes";
 // import JoinUs from "./pages/JoinUs";
 import Navbar from "./components/Navbar";
-import Pricing from "./pages/Pricing";
+import Pricing from "./pages/pricing/Pricing";
 import Login from "./pages/login_page/Login"
 import Footer from "./components/Footer/Footer";
 import Registration from "./pages/register/Register";
