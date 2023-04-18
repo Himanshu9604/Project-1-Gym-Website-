@@ -5,14 +5,14 @@ import About from "./pages/AboutUs";
 import Blogs from "./pages/Blogs";
 import Classes from "./pages/Classes";
 import JoinUs from "./pages/JoinUs";
-import Navbar from "./components/Navbar";
+
 import Pricing from "./pages/Pricing";
 import Login from "./pages/login_page/Login"
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
