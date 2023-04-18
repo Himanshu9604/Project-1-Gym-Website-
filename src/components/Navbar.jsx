@@ -15,18 +15,15 @@ function Navbar() {
       <li>
       <NavLink to='/blogs'>Blogs</NavLink>
       </li>
-      <li>
-      <NavLink to='/classes'>Classes</NavLink>
-      </li>
-      <li>
-      <NavLink to='/joinus'>JoinUs</NavLink>
-      </li>
+      
+      
       <li>
       <NavLink to='/pricing'>Pricing</NavLink>
       </li>
       <li>
-        <NavLink to ='/login'> Login</NavLink>
+        <NavLink to ='/joinus'> JoinUS</NavLink>
       </li>
+      
       </ul>
     </div>
   )

@@ -37,7 +37,7 @@ function Login() {
                 
             </form><br/>
             <button type="submit" >Log In</button><br/>
-            <NavLink to='/' className={Styles.navlink}>Back to Home</NavLink>
+            <NavLink to='/register' className={Styles.navlink}>Register ? </NavLink>
         </div>
     );
 }
