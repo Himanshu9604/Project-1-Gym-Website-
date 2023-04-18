@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
-
 const slideStyles = {
+  
   width: "100vw",
+  margin:'63px',
+  
   height: "100vh",
   borderRadius: "10px",
   backgroundSize: "cover",
@@ -66,9 +68,17 @@ const Slider = ({ slides }) => {
     ...slideStyles,
     backgroundImage: `url(${slides[currentIndex].url})`,
   };
+  
   return (
-    <div style={sliderStyles}>
-      <div>
+       
+    <div >
+       {/* <div className={styles.main}>
+        <img className={styles.img} src="new2.jpg" />
+        <h2 className={styles.h1}><b>"Take care of your body</b></h2>
+        <h2 className={styles.h1}><b>It's only place you have to live</b></h2>
+        <button className={styles.btn}>Join With Us</button>
+      </div> */}
+       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰
         </div>
@@ -88,9 +98,10 @@ const Slider = ({ slides }) => {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </div> 
+   </div>
+   
   );
-};
+    }
 
 export default Slider;
