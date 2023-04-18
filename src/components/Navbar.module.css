@@ -1,4 +1,4 @@
- /* <<<<<<< HEAD */
+
  .home, .About, .Blogs, .Classes,.JoinUs,.Pricing {
      float: left;
      color: black;
@@ -45,40 +45,3 @@
          text-align: left;
      }
  } 
-/* ======= */ 
-
-
-/* 
-.navbar {
-    background-color: #fff;
-    
-    background-color: rgb(47, 4, 47);
-  box-shadow: 0 2px 4px rgba(222, 191, 191, 0.1);
-  padding: 20px;
-  }
-  
-  .navbar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar li {
-    margin: 0 10px;
-  }
-  
-  .navbar li a {
-    color: #e5c3c3;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 0;
-  }
-  
-  .navbar li a:hover {
-    color: #7396ad;
-  }
-/*   
->>>>>>> origin/login-pages */ 
