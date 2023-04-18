@@ -1,4 +1,4 @@
-/* <<<<<<< HEAD
+ /* <<<<<<< HEAD */
  .home, .About, .Blogs, .Classes,.JoinUs,.Pricing {
      float: left;
      color: black;
@@ -37,19 +37,18 @@
 
  /* Add media queries for responsiveness*/
 
- /* @media screen and (max-width: 500px) {
+  @media screen and (max-width: 500px) {
 
      .home,.About,.Blogs,.Classes,.JoinUs,.Pricing {
          float: none;
          display: block;
          text-align: left;
      }
-
- } */
+ } 
 /* ======= */ 
 
 
-
+/* 
 .navbar {
     background-color: #fff;
     
@@ -82,4 +81,4 @@
     color: #7396ad;
   }
 /*   
->>>>>>> origin/login-pages */
+>>>>>>> origin/login-pages */ 
