@@ -1,0 +1,191 @@
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+ul li a {
+    color: rgb(231, 229, 229);
+    text-decoration: none;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: rgb(188, 188, 188);
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 28, 28);
+    padding: 50px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: red;
+
+}
+
+.pcopyright {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.icons {
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+
+}
+
+.ic {
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+
+}
+.icon{
+    font-size: 30px;
+}
+
+@media screen and (max-width:700px) {
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        font-size: 10px;
+    }
+
+    ul li a {
+        color: rgb(231, 229, 229);
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 10px;
+        color: rgb(188, 188, 188);
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(29, 28, 28);
+        padding: 50px;
+    }
+
+    h3 {
+       
+        font-size: 20px;
+        color: red;
+
+    }
+
+    .pcopyright {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .icons {
+        display: flex;
+        width: 200px;
+        justify-content: space-evenly;
+
+
+    }
+
+    .ic {
+        background-color: white;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:488px) {
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        font-size: 5px;
+        
+    }
+
+    ul li a {
+        color: rgb(231, 229, 229);
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 5px;
+        color: rgb(188, 188, 188);
+        margin-left: 5px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(29, 28, 28);
+        padding: 10px;
+        width: 100vw;
+       overflow: scroll;
+    }
+
+    h3 {
+        margin-left: 100px;
+        font-size: 10px;
+        color: red;
+
+    }
+
+    .pcopyright {
+        font-size: 5px;
+        text-align: center;
+
+    }
+
+    .icons {
+        display: flex;
+        width: 200px;
+        justify-content: space-evenly;
+       margin-left: 40px;
+        margin-top: 30px;
+
+    }
+
+    .ic {
+        background-color: white;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        
+        text-align: center;
+
+    }
+    .icon{
+        font-size: 20px;
+
+    }
+}
