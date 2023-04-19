@@ -6,12 +6,14 @@ import Styles from "./Login.module.css";
 function Login() {
   const [useremail, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const [allData, setAllData] = useState(
     JSON.parse(localStorage.getItem("userData"))
   );
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     // Do login logic here
     if (allData) {
       const dataExistOrNot = allData.find(
@@ -41,13 +43,14 @@ function Login() {
           <h1 style={{ color: "#4FB4CF", fontSize: "60px" }}>Login Page</h1>
           <div className={Styles.formDiv}>
             <input
-              placeholder="UserName"
+              placeholder="UserEmail"
               type="text"
               value={useremail}
               onChange={(e) => setEmail(e.target.value)}
               className={Styles.inputFieldUserName}
             />
             <br />
+
             <input
               placeholder="Password"
               type="password"

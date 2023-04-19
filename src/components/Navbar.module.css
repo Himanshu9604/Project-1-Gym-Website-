@@ -14,17 +14,19 @@
   }
   
   .navbar ul {
+    display: block;
     display: flex;
     /* float: right; */
-    align-items: center;
+    /* align-items: center; */
     margin: 0;
     padding: 0;
+    
   
     
   }
   
   .navbar li {
-    margin: 0 50px;
+    margin: 0 10px;
   }
   
   .navbar li a {
@@ -85,9 +87,16 @@ font-weight: bold;
  }
 
 
+
+ .navIcon{
+    display: none;
+ }
+
+
+
  /* Add media queries for responsiveness*/
 
- @media screen and (max-width: 500px) {
+ /* @media screen and (max-width: 500px) {
 
      .home,.About,.Blogs,.Classes,.JoinUs,.Pricing {
          float: none;
@@ -95,4 +104,69 @@ font-weight: bold;
          text-align: left;
      }
 
+ } */
+
+
+
+ @media screen and (max-width: 1000px) {
+
+    .navbar ul {
+      display: none;
+        
+      }
+      .navIcon{
+        display:block;
+      }
+      .navbar li a {
+        color: #e5c3c3;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 0;
+        justify-content: center;
+      }
+      .joinUSBtn{
+        /* float: right; */
+        margin-top: -10px;
+        color: wheat;
+        background-color: red;
+        padding:5px 10px;
+        font-size: 15px;
+        font-weight: bold;
+        /* margin-right: 100px; */
+          }
+          #logo{
+            font-size: 20px;
+          
+        }
+
+ }
+
+
+
+
+ @media screen and (max-width: 494px) {
+
+  .joinUSBtn{
+/* float: right; */
+margin-top: -10px;
+color: wheat;
+background-color: red;
+padding:5px 10px;
+font-size: 15px;
+font-weight: bold;
+/* margin-right: 100px; */
+  }
+  .navbar li a {
+    color: #e5c3c3;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 0;
+  
+}
+#logo{
+    font-size: 20px;
+  
+}
  }
