@@ -41,17 +41,79 @@ export default function Training() {
   ];
 
   return (
-    <div className={styles.carouselContainer}>
-      <div id={styles.carouselText}>Training Programs</div>
-      <div className={styles.carousel}>
-        {trainingData.map((item, index) => {
-          return (
-            <TrainingTypeCard
-              type={trainingData[index].type} //get props from here from down function
-              imgUrl={trainingData[index].imgUrl}
-            />
-          );
-        })}
+    <div>
+      <div className={styles.carouselContainer}>
+        <div className={styles.trainning}>
+          <div id={styles.carouselText}>Training Programs</div>
+          <p >
+            Choose a category that best suits the workout you're searching for.
+            Once in the category,
+            <br />
+            use the sort and filter options to find the right workout for your
+            experience and goals. The most downloaded workouts in our database
+            during the past 24 hours. You can also find top/trending workouts by
+            choosing a category (above) and scrolling to the "trending" view.
+          </p>
+        </div>
+
+        <div className={styles.carousel}>
+          {trainingData.map((item, index) => {
+            return (
+              <TrainingTypeCard
+                type={trainingData[index].type} //get props from here from down function
+                imgUrl={trainingData[index].imgUrl}
+              />
+            );
+          })}
+        </div>
+
+        {/* <h1>Trainning Chart :</h1> */}
+      </div>
+      <div className={styles.list}>
+        <h1>Training Chart </h1>
+        <table>
+          <tr>
+            <th>Sr No.</th>
+            <th> Exercises</th>
+            <th>Days</th>
+          </tr>
+
+          <tr>
+            <td>1.</td>
+            <td>ABS</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Arms</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>LEGS</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>SHOULDERS</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>CHEST</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>FULL-BODY</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>BACK</td>
+            <td>2</td>
+          </tr>
+        </table>
       </div>
     </div>
   );
