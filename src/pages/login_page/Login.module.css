@@ -5,8 +5,7 @@ justify-content: space-between;
 }
 
 .mainDivImg{
-  /* background-image: url("https://adobexdelements.com/wp-content/uploads/2021/05/adobe-xd-login-page-template.png"); 
-   background-repeat: no-repeat; */
+  
   width: 50vw;
   height:fit-content;
   padding: 3rem;
@@ -42,14 +41,12 @@ margin-bottom: 200px;
   margin-top: 2rem;
   font-size: 2rem;
   padding: 1rem 2rem;
-  /* margin-left: 10rem; */
   border-bottom: 2px solid rgb(15, 214, 214);
   border-top:none;
   border-left:none; 
   border-right:none;
 }
 .loginButton{
-  /* margin-left: 20rem; */
   margin-top: 2rem;
   padding:1rem 3rem;
   font-size: 1.3rem;

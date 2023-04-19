@@ -41,11 +41,12 @@ export default function Training() {
   ];
 
   return (
+    // <<<<<<< HEAD
     <div>
       <div className={styles.carouselContainer}>
         <div className={styles.trainning}>
           <div id={styles.carouselText}>Training Programs</div>
-          <p >
+          <p>
             Choose a category that best suits the workout you're searching for.
             Once in the category,
             <br />
@@ -59,7 +60,7 @@ export default function Training() {
         <div className={styles.carousel}>
           {trainingData.map((item, index) => {
             return (
-              <TrainingTypeCard
+              <TrainingCard
                 type={trainingData[index].type} //get props from here from down function
                 imgUrl={trainingData[index].imgUrl}
               />
@@ -120,7 +121,7 @@ export default function Training() {
 }
 
 //pass props from here
-function TrainingTypeCard({ type, imgUrl }) {
+function TrainingCard({ type, imgUrl }) {
   return (
     <div className={styles.cardBox}>
       <img className={styles.card} src={imgUrl}></img>

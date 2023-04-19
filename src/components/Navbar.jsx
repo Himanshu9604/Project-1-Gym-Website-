@@ -55,6 +55,9 @@ function Navbar() {
           <li>
             <NavLink to="/training">Training</NavLink>
           </li>
+          <li>
+            <NavLink to='/contactus'>Contact Us</NavLink>
+          </li>
         </ul>
       </div>
       <div>
