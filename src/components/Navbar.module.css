@@ -8,6 +8,7 @@
   box-shadow: 0 2px 4px rgba(222, 191, 191, 0.1);
   padding: 40px;
   display: flex;
+  z-index: 20;
     width: 95vw;
   justify-content: space-evenly;
   overflow: hidden;

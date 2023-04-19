@@ -46,7 +46,7 @@ export default function Training() {
       <div className={styles.carousel}>
         {trainingData.map((item, index) => {
           return (
-            <TrainingTypeCard
+            <TrainingCard
               type={trainingData[index].type} //get props from here from down function
               imgUrl={trainingData[index].imgUrl}
             />
@@ -58,7 +58,7 @@ export default function Training() {
 }
 
 //pass props from here
-function TrainingTypeCard({ type, imgUrl }) {
+function TrainingCard({ type, imgUrl }) {
   return (
     <div className={styles.cardBox}>
       <img className={styles.card} src={imgUrl}></img>

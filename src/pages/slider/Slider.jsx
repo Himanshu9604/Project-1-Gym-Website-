@@ -1,32 +1,34 @@
 import React from "react";
 import { useState } from "react";
 const slideStyles = {
-  width: "100vw",
-  margin: "63px",
-
-  height: "100vh",
-  borderRadius: "10px",
+  width: "100%",
+  margin: "100px",
+  marginTop:'90px',
+   height: "100vh",
+  borderRadius:  "10px",
   backgroundSize: "cover",
 };
 
 const rightArrowStyles = {
   position: "absolute",
+  marginTop:"100px",
   top: "50%",
   transform: "translate(0, -50%)",
   right: "32px",
   fontSize: "45px",
-  color: "#fff",
+  color: "black",
   zIndex: 1,
   cursor: "pointer",
 };
 
 const leftArrowStyles = {
   position: "absolute",
+  marginTop:"100px",
   top: "50%",
   transform: "translate(0, -50%)",
   left: "32px",
   fontSize: "45px",
-  color: "#fff",
+  color: "black",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -42,10 +44,10 @@ const dotsContainerStyles = {
 };
 
 const dotStyle = {
-  marginTop: "-40px",
+  marginTop: "400px",
   cursor: "pointer",
   fontSize: "30px",
-  color: "white",
+  color: "yellow",
 };
 
 const Slider = ({ slides }) => {
@@ -70,13 +72,7 @@ const Slider = ({ slides }) => {
 
   return (
     <div>
-      {/* <div className={styles.main}>
-        <img className={styles.img} src="new2.jpg" />
-        <h2 className={styles.h1}><b>"Take care of your body</b></h2>
-        <h2 className={styles.h1}><b>It's only place you have to live</b></h2>
-        <button className={styles.btn}>Join With Us</button>
-      </div> */}
-      <div>
+           <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰
         </div>

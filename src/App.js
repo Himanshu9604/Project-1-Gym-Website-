@@ -11,6 +11,7 @@ import Login from "./pages/login_page/Login";
 import Footer from "./components/Footer/Footer";
 import Registration from "./pages/register/Register";
 import Training from "./pages/training/Training";
+import ContactUs from "./pages/contactus/contact";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/joinus" element={<Login />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/training" element={<Training />} />
+        <Route path="/contactus" element={<ContactUs/>} />
       </Routes>
       <Footer />
     </div>
