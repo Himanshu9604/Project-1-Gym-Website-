@@ -63,3 +63,36 @@
   .cardBox {
     position: relative;
   }
+
+  .trainning{
+     text-align: center;
+     margin-left: 100px;
+  }
+  .list{
+    /* border: 1px solid #380404; */
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+  width: 50%;
+  text-align: center;
+  margin-left: 155px;
+  word-spacing: 15px;
+  }
+  th {
+    padding-top: 12px;
+    padding-bottom: 22px;
+    text-align: center;
+    background-color: #39d29a;
+    color: white;
+  }
+  table{
+     text-align: center;
+     margin-left: 225px;
+     
+  }
+  td, th{
+    border: 2px solid black;
+    padding: 8px;
+    gap: 30px;
+    width: 15%;
+  }
