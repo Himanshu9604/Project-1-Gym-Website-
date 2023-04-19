@@ -1,0 +1,14 @@
+.data1{
+    text-align: center;
+}
+.head1{
+    font-size: 5rem;
+    color: tomato;
+}
+.section1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 34px;
+    
+}

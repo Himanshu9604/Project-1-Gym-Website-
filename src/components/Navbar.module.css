@@ -6,29 +6,46 @@
   top: 0;
   background-color: rgb(66, 27, 66);
   box-shadow: 0 2px 4px rgba(222, 191, 191, 0.1);
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+    width: 95vw;
+  justify-content: space-evenly;
+  overflow: hidden;
   }
   
   .navbar ul {
     display: flex;
-    justify-content: space-between;
+    /* float: right; */
     align-items: center;
     margin: 0;
     padding: 0;
+  
+    
   }
   
   .navbar li {
-    margin: 0 10px;
+    margin: 0 50px;
   }
   
   .navbar li a {
     color: #e5c3c3;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: bold;
     padding: 10px 0;
   }
   
+  .joinUSBtn{
+/* float: right; */
+margin-top: -10px;
+color: wheat;
+background-color: red;
+padding:10px 20px;
+font-size: 25px;
+font-weight: bold;
+/* margin-right: 100px; */
+  }
+
   .navbar li a:hover {
     color: #7396ad;
   }

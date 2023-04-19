@@ -1,16 +1,17 @@
-/* .cardscontainer {
+.cardscontainer {
     display: flex;
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
     border: 1px solid white;
+    height: fit-content;
   }
   
   .card1 {
     width: 50pxpx;
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: rgb(41, 40, 40);
+    padding: 80px 100px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(250, 243, 243, 0.3);
     text-align: center;
@@ -58,4 +59,20 @@
   
   .card button:hover {
     background-color: #0062cc;
-  } */
+  }
+  .card2{
+    background-color: white;
+    padding-top: 40px;
+    margin-left: 2rem;
+   text-align: center;
+   
+  }
+  .card3{
+    background-color: rgb(41, 40, 40);
+    width:540px ;
+    height: 600px;
+    padding-top: 40px;
+    margin-left: 2rem;
+    text-align: center;
+    padding: 70px 50px;
+  }
