@@ -3,15 +3,15 @@ import { useState } from "react";
 const slideStyles = {
   width: "100%",
   margin: "100px",
-  marginTop:'90px',
-   height: "100vh",
-  borderRadius:  "10px",
+  marginTop: "90px",
+  height: "100vh",
+  borderRadius: "10px",
   backgroundSize: "cover",
 };
 
 const rightArrowStyles = {
   position: "absolute",
-  marginTop:"100px",
+  marginTop: "100px",
   top: "50%",
   transform: "translate(0, -50%)",
   right: "32px",
@@ -23,7 +23,7 @@ const rightArrowStyles = {
 
 const leftArrowStyles = {
   position: "absolute",
-  marginTop:"100px",
+  marginTop: "100px",
   top: "50%",
   transform: "translate(0, -50%)",
   left: "32px",
@@ -72,7 +72,7 @@ const Slider = ({ slides }) => {
 
   return (
     <div>
-           <div>
+      <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰
         </div>

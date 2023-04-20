@@ -191,24 +191,6 @@ function Registration() {
         </div>
         <br />
         <button className={styles.button}>Register</button>
-        {/* {arr.map((data, index) => {
-          return (
-            <>
-            <li key={index}>
-              {data.firstName}
-            </li>
-             <li key={index}>
-             {data.LastName}
-           </li>
-            <li key={index}>
-            {data.Email}
-          </li>
-          <li key={index}>
-            {data.password}
-          </li>
-          </>
-          );
-        })} */}
       </form>
     </div>
   );
