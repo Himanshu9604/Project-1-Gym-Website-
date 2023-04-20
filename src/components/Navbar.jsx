@@ -1,5 +1,5 @@
-import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Styles from "./Navbar.module.css";
 import { AiOutlineBars } from "react-icons/ai";
 
@@ -7,6 +7,11 @@ function Navbar() {
   const navigate = useNavigate();
   const linkRef = React.useRef();
   const property = React.useRef("none");
+
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [location]);
 
   function handleNavigation() {
     navigate("/joinus");
@@ -56,7 +61,7 @@ function Navbar() {
             <NavLink to="/training">Training</NavLink>
           </li>
           <li>
-            <NavLink to='/contactus'>Contact Us</NavLink>
+            <NavLink to="/contactus">Contact Us</NavLink>
           </li>
         </ul>
       </div>

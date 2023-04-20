@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import styles from "./Registration.module.css";
+import { useNavigate } from "react-router";
 
 function Registration() {
   const [name, setFirstName] = useState("");
@@ -11,6 +12,11 @@ function Registration() {
   const [passError, setPassError] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [lNameError, setLNameError] = useState(false);
+  const navigate = useNavigate();
+
+  const [allData, setAllData] = useState(
+    JSON.parse(localStorage.getItem("userData"))
+  );
 
   let name1 = useRef("");
   let lName = useRef("");
@@ -77,31 +83,66 @@ function Registration() {
       setPassError(true);
       console.log("not submitted please fill all fields");
     } else {
-      setNameError(false);
-      setLNameError(false);
-      setEmailError(false);
-      setPassError(false);
-      console.log("form submitted");
-      alert("Register Successfully");
-      let newData = [
-        ...arr,
-        {
-          firstName: name,
-          surname: lastname,
-          Emailid: email,
-          password: password,
-        },
-      ];
-      setArr(newData);
-      localStorage.setItem("userData", JSON.stringify(newData));
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-      setPassword("");
-      name1.current = "";
-      lName.current = "";
-      email1.current = "";
-      pass.current = "";
+      if (allData) {
+        const dataExistOrNot = allData.find((item) => item.Emailid == email);
+        if (dataExistOrNot != undefined) {
+          alert("Email is exist use another email.");
+        } else {
+          setNameError(false);
+          setLNameError(false);
+          setEmailError(false);
+          setPassError(false);
+          console.log("form submitted");
+          alert("Register Successfully");
+          let newData = [
+            ...allData,
+            {
+              firstName: name,
+              surname: lastname,
+              Emailid: email,
+              password: password,
+            },
+          ];
+          setArr(newData);
+          localStorage.setItem("userData", JSON.stringify(newData));
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setPassword("");
+          name1.current = "";
+          lName.current = "";
+          email1.current = "";
+          pass.current = "";
+          navigate("/");
+        }
+      } else {
+        setNameError(false);
+        setLNameError(false);
+        setEmailError(false);
+        setPassError(false);
+        console.log("form submitted");
+        alert("Register Successfully");
+        let newData = [
+          ...arr,
+          {
+            firstName: name,
+            surname: lastname,
+            Emailid: email,
+            password: password,
+          },
+        ];
+        setArr(newData);
+        localStorage.setItem("userData", JSON.stringify(newData));
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPassword("");
+        name1.current = "";
+        lName.current = "";
+        email1.current = "";
+        pass.current = "";
+        navigate("/");
+      }
     }
 
     console.log(name1.current, lName.current, email1.current, pass.current);

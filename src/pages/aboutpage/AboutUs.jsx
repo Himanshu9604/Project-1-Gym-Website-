@@ -5,17 +5,21 @@ function About() {
   return (
     <div>
       <div>
-      <div>
-
-      <iframe  width="1510"
-         height="440" class="shogun-video-embed " src="https://www.youtube.com/embed/lpxKE4gLn8U?start=0&end=0&autoplay=1&loop=1&mute=1&playlist=lpxKE4gLn8U&version=3&rel=0" allowfullscreen title="Embedded Youtube Video">…</iframe>
-
-        
-         </div>
+        <div>
+          <iframe
+            width="1510"
+            height="440"
+            class="shogun-video-embed "
+            src="https://www.youtube.com/embed/lpxKE4gLn8U?start=0&end=0&autoplay=1&loop=1&mute=1&playlist=lpxKE4gLn8U&version=3&rel=0"
+            allowfullscreen
+            title="Embedded Youtube Video"
+          >
+            …
+          </iframe>
+        </div>
       </div>
       <div className={Styles.nopain}>
         <iframe
-        
           width="1510"
           height="340"
           src="https://www.youtube.com/embed/-Ov9JTw-59s"
@@ -41,7 +45,7 @@ function About() {
 
           <div className={Styles.rightcontent}>
             <h1 style={{ color: "tomato", fontSize: "80px" }}> 🏋🏻‍♂️About Us</h1>
-            <pre style={{ fontSize: "23px", marginLeft: "50px" }}>
+            <p style={{ fontSize: "23px", marginLeft: "50px" }}>
               Find motivation from training with others for an efficient and
               <br />
               progressive workout. Offering interactive and energetic sessions,
@@ -51,7 +55,7 @@ function About() {
               trained fitness staff. These classes are a great way to work the
               <br />
               whole body and improve overall fitness.
-            </pre>
+            </p>
             <br />
 
             <button
@@ -61,6 +65,7 @@ function About() {
                 fontSize: "20px",
                 borderRadius: "10px",
               }}
+              onClick={() => alert("Clicked From About us section")}
             >
               Learn More
             </button>
@@ -135,7 +140,6 @@ function About() {
             allowfullscreen
           ></iframe>
         </div>
-         
       </div>
     </div>
   );

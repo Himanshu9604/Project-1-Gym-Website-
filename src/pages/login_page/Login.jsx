@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Styles from "./Login.module.css";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [useremail, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const [allData, setAllData] = useState(
     JSON.parse(localStorage.getItem("userData"))
@@ -21,6 +23,7 @@ function Login() {
       );
       if (dataExistOrNot != undefined) {
         alert("Login Success");
+        navigate("/");
       } else {
         alert("Login Failed");
       }

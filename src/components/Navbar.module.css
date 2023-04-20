@@ -137,7 +137,7 @@ margin-top: -10px;
 color: wheat;
 background-color: red;
 padding:5px 10px;
-font-size: 15px;
+font-size: 5px;
 font-weight: bold;
   }
   .navbar li a {
@@ -149,7 +149,7 @@ font-weight: bold;
   
 }
 #logo{
-    font-size: 20px;
+    font-size: 10px;
   
 }
  }

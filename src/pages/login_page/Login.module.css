@@ -1,56 +1,101 @@
 
+
+
 .Container{
-display: flex;
-justify-content: space-between;
-}
-
-.mainDivImg{
+  display: flex;
+  justify-content: space-between;
+  }
   
-  width: 50vw;
-  height:fit-content;
-  padding: 3rem;
-  background-color: rgb(220, 219, 219);
-text-align: center;
-border-radius: 50px;
-margin: auto;
-margin-top: 200px;
-margin-bottom: 200px;
-
- 
-}
-
-
-.imgDivcontain{
-  width: 50vw;
+  .mainDivImg{
+    
+    width: 50vw;
+    height:fit-content;
+    padding: 3rem;
+    background-color: rgb(220, 219, 219);
   text-align: center;
+  border-radius: 50px;
   margin: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
   
-}
-
-.inputFieldUserName{
- 
-  font-size: 2rem;
-  padding: 1rem 2rem;
- 
-  border-bottom: 2px solid rgb(15, 214, 214);
-  border-top:none;
-  border-left:none; 
-  border-right:none;
-}
-.inputFieldPassword{
-  margin-top: 2rem;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid rgb(15, 214, 214);
-  border-top:none;
-  border-left:none; 
-  border-right:none;
-}
-.loginButton{
-  margin-top: 2rem;
-  padding:1rem 3rem;
-  font-size: 1.3rem;
-  background-color: #4FB4CF;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+   
+  }
+  
+  
+  .imgDivcontain{
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+    
+  }
+  
+  .inputFieldUserName{
+   
+    font-size: 2rem;
+    padding: 1rem 2rem;
+   
+    border-bottom: 2px solid rgb(15, 214, 214);
+    border-top:none;
+    border-left:none; 
+    border-right:none;
+  }
+  .inputFieldPassword{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid rgb(15, 214, 214);
+    border-top:none;
+    border-left:none; 
+    border-right:none;
+  }
+  .loginButton{
+    margin-top: 2rem;
+    padding:1rem 3rem;
+    font-size: 1.3rem;
+    background-color: #4FB4CF;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .mainDivImg {
+    padding: 0%;
+    }
+    
+    
+    h1 {
+    text-align: center;
+    }
+    
+    .formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    }
+    .Container{
+    display: flex;
+    flex-direction: column;
+    }
+    input{
+     display: flex;
+     flex-direction: column;
+     height: 50%;
+     width: 50%;
+  }
+  .imgDivcontain{
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 10%;
+  }
+  img{
+    height: 20rem;
+    width: 20rem;
+    margin-left:-90px;
+    margin-top: 20px;
+    
+  }
+  }
