@@ -16,7 +16,7 @@ function ContactUs() {
       { firstName: name, surname: lastname, message: message, numbers: number },
     ];
     setArr(newData);
-    localStorage.setItem("userData", JSON.stringify(newData));
+    localStorage.setItem("contactUS", JSON.stringify(newData));
     setFirstName("");
     setLastName("");
     setMessage("");

@@ -12,6 +12,7 @@ import Footer from "./components/Footer/Footer";
 import Registration from "./pages/register/Register";
 import Training from "./pages/training/Training";
 import ContactUs from "./pages/contactus/contact";
+import NotFound from "./pages/notfoundpage/NotFound";
 
 function App() {
   return (
@@ -20,14 +21,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-
-        {/* <Route path="/classes" element={<Classes />} /> */}
-        {/* <Route path="/joinus" element={<JoinUs />} /> */}
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/joinus" element={<Login />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/training" element={<Training />} />
-        <Route path="/contactus" element={<ContactUs/>} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

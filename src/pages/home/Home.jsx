@@ -5,7 +5,6 @@ import { useNavigate } from "react-router";
 
 function Home() {
   const slides = [
-    
     {
       url: "https://images.unsplash.com/photo-1561214095-fea147325936?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
     },
@@ -14,15 +13,12 @@ function Home() {
     },
     {
       url: "https://thumbs.dreamstime.com/b/dumbbells-shelf-workout-gym-copy-space-blurred-gym-background-preparation-gym-exercises-workout-gym-161393354.jpg",
-     
     },
     {
       url: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      
     },
     {
       url: "https://thumbs.dreamstime.com/b/dumbbells-shelf-workout-gym-copy-space-blurred-gym-background-preparation-gym-exercises-workout-gym-161393354.jpg",
-   
     },
   ];
 
@@ -51,7 +47,8 @@ function Home() {
       <div className={styl.section1}>
         <div style={{}}>
           <h1 style={{ fontSize: "40px", color: "black" }}>
-            Download the Gold's Gym India App today
+            Most people fail, not because of lack of desire, but, because of
+            lack of commitment.
           </h1>
           <h2>
             {" "}

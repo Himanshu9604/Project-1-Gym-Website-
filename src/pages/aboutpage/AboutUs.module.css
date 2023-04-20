@@ -69,3 +69,13 @@
 .nopain{
     margin-top: 3px;
 }
+
+@media screen and (max-width: 500px) {
+
+    .leftimg {
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+}
