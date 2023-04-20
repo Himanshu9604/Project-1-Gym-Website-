@@ -1,0 +1,30 @@
+.leftArrowStyles{
+position: absolute;
+margin-top: 100px;
+top: 50%;
+left: 32px;
+font-size: 45px;
+color: black;
+z-index: 1;
+cursor: pointer;
+}
+
+.rightArrowStyles {
+    position: absolute;
+    margin-top: 100px;
+    top: 50%;
+
+    right: 32px;
+    font-size: 45px;
+    color: black;
+    z-index: 1;
+    cursor: pointer;  
+} 
+
+  .dotStyle{
+    margin-top: 400px;
+    cursor: pointer;
+    font-size: 30px;
+    color: yellow;
+  }
+  

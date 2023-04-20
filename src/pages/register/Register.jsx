@@ -41,24 +41,7 @@ function Registration() {
           <input type="password" id="password" className={styles.input} value={password} onChange={(e) => setPassword(e.target.value)} /><br/>
         </div><br/>
         <button className={styles.button}>Register</button>
-        {/* {arr.map((data, index) => {
-          return (
-            <>
-            <li key={index}>
-              {data.firstName}
-            </li>
-             <li key={index}>
-             {data.LastName}
-           </li>
-            <li key={index}>
-            {data.Email}
-          </li>
-          <li key={index}>
-            {data.password}
-          </li>
-          </>
-          );
-        })} */}
+        
       </form>
     </div>
   );

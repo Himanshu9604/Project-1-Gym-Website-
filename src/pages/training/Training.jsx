@@ -47,7 +47,7 @@ export default function Training() {
         {trainingData.map((item, index) => {
           return (
             <TrainingCard
-              type={trainingData[index].type} //get props from here from down function
+              type={trainingData[index].type} //pass props from here from down function
               imgUrl={trainingData[index].imgUrl}
             />
           );
@@ -57,12 +57,12 @@ export default function Training() {
   );
 }
 
-//pass props from here
-function TrainingCard({ type, imgUrl }) {
+//get props from here
+function TrainingCard( props) {
   return (
     <div className={styles.cardBox}>
-      <img className={styles.card} src={imgUrl}></img>
-      <div id={styles.cardTypeText}>{type}</div>
+      <img className={styles.card} src={props.imgUrl}></img>
+      <div id={styles.cardTypeText}>{props.type}</div>
     </div>
   );
 }

@@ -17,11 +17,10 @@ function Home() {
      
     },
     {
-      url: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      
+      url: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
-      url: "https://thumbs.dreamstime.com/b/dumbbells-shelf-workout-gym-copy-space-blurred-gym-background-preparation-gym-exercises-workout-gym-161393354.jpg",
+      url: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
    
     },
   ];
@@ -59,9 +58,7 @@ function Home() {
           </h2>
         </div>
         <div>
-          {/* <button
-            style={{ marginTop: "40px", padding: "30px", borderRadius: "40px" }}
-          > */}
+        
           <div>
             <button
               style={{
@@ -74,7 +71,7 @@ function Home() {
               JoinUS
             </button>
           </div>
-          {/* </button> */}
+         
         </div>
       </div>
       <img
