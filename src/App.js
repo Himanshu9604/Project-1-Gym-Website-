@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/aboutpage/AboutUs";
+import "./App.css";
 
 // import Classes from "./pages/Classes";
 // import JoinUs from "./pages/JoinUs";
@@ -16,7 +17,7 @@ import NotFound from "./pages/notfoundpage/NotFound";
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: " #f2f2f2" }}>
+    <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,12 +1,22 @@
+.main{
+    width: 95%;
+    height: 95%;
+  
+}
+.fullscreenIframes{
+    width: 100%;
+    
+}
 .first{
    
     height: 550px;
-    width: 900px;
+    width: 100%;
     color: aliceblue;
     display: flex;
-    justify-self: start;
-    
-    margin-left: 80px;
+    /* justify-self: start; */
+    /* justify-content: center; */
+    /* margin-left: 80px; */
+    /* background-color: blue; */
     
 }
 .second{
@@ -17,7 +27,7 @@
     display: flex;
     justify-self: start;
     font-size: 20px;
-   
+   margin-top: 130px;
     text-align: center;  
 }
 .leftimg{
@@ -38,18 +48,19 @@
     
 }
 .rightcontent{
+    width: fit-content;
+    height: fit-content;
     text-align: center;
-    margin-left: 20px;
-    margin-right: 15px;
     color: black;
     margin-top: 20px;
     font-size: -5px;
 
+
 }
 .leftcontent{
     text-align: center;
-    height: 550px;
-    width: 900px;
+    width: fit-content;
+    height: fit-content;
     margin-top: -35px;
     font-size: 23px;
   
@@ -65,17 +76,53 @@
     margin-top: -120px;
     font-size: 20px;
     background-color: cadetblue;
+    padding: 30px;
 }
 .nopain{
     margin-top: 3px;
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 781px) {
 
     .leftimg {
         width: auto;
         height: auto;
         display: block;
+    }
+    .first{
+   
+        height: 550px;
+        width: 100%;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        /* justify-self: start; */
+        /* justify-content: center; */
+        /* margin-left: 80px; */
+        /* background-color: blue; */
+        
+    }
+    .second{
+   
+        height: fit-content;
+        width: fit-content;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-self: start;
+        font-size: 20px;
+       margin-top: 180px;
+        text-align: center;  
+    }
+    .culture{
+        text-align: center;
+        color: rgb(22, 41, 3);
+        margin-bottom: 85px;
+        margin-top: 120px;
+        font-size: 20px;
+        background-color: cadetblue;
+        padding: 30px;
     }
 
 }

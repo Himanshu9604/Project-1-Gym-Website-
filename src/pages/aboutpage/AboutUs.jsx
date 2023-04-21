@@ -7,11 +7,12 @@ function About() {
       <div>
         <div>
           <iframe
-            width="1510"
-            height="440"
-            class="shogun-video-embed "
+            className={Styles.fullscreenIframes}
+            // width={1000}
+            height={440}
+            // class="shogun-video-embed "
             src="https://www.youtube.com/embed/lpxKE4gLn8U?start=0&end=0&autoplay=1&loop=1&mute=1&playlist=lpxKE4gLn8U&version=3&rel=0"
-            // allowfullscreen
+            allowfullscreen
             title="Embedded Youtube Video"
           >
             …
@@ -20,7 +21,7 @@ function About() {
       </div>
       <div className={Styles.nopain}>
         <iframe
-          width="1510"
+          className={Styles.fullscreenIframes}
           height="340"
           src="https://www.youtube.com/embed/-Ov9JTw-59s"
           title="YouTube video player"
@@ -44,8 +45,8 @@ function About() {
           </div>
 
           <div className={Styles.rightcontent}>
-            <h1 style={{ color: "tomato", fontSize: "80px" }}> 🏋🏻‍♂️About Us</h1>
-            <p style={{ fontSize: "23px", marginLeft: "50px" }}>
+            <h1 style={{ color: "tomato", fontSize: "30px" }}> 🏋🏻‍♂️About Us</h1>
+            <p style={{ fontSize: "23px", marginLeft: "10px" }}>
               Find motivation from training with others for an efficient and
               <br />
               progressive workout. Offering interactive and energetic sessions,
@@ -78,19 +79,19 @@ function About() {
 
         <div className={Styles.second}>
           <div className={Styles.leftcontent}>
-            <h1 style={{ color: "tomato" }}>Why Choose US</h1>
-            <p>
+            <h1 style={{ color: "tomato", fontSize: "30px" }}>Why Choose US</h1>
+            <p style={{ fontSize: "23px", marginLeft: "10px" }}>
               <li> 💪Consulation With expert</li>
             </p>
-            <p>
+            <p style={{ fontSize: "23px", marginLeft: "10px" }}>
               Whatever you want from a workout, make DMT part of your training
               <br /> programme for quicker and more effective results.
             </p>
 
-            <p>
+            <p style={{ fontSize: "23px", marginLeft: "10px" }}>
               <li>🏋️‍♂️ Best workout facilities</li>
             </p>
-            <p>
+            <p style={{ fontSize: "23px", marginLeft: "10px" }}>
               Push your fitness further with our mix of facilities and we'll
               support you with advice on new and better ways to train.
             </p>
@@ -131,7 +132,7 @@ function About() {
         </div>
         <div>
           <iframe
-            width="1490"
+            className={Styles.fullscreenIframes}
             height="540"
             src="https://www.youtube.com/embed/HUlmP6cPXvQ"
             title="YouTube video player"

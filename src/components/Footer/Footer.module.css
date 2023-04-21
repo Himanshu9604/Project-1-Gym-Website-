@@ -27,6 +27,7 @@ h2 {
     background-color: rgb(29, 28, 28);
     padding: 40px;
     margin-top: 60px;
+    width: 95%;
 }
 
 h3 {
@@ -85,6 +86,8 @@ h3 {
         justify-content: space-evenly;
         background-color: rgb(29, 28, 28);
         padding: 50px;
+        width: 95%;
+       
     }
 
     h3 {
@@ -131,6 +134,7 @@ h3 {
 
     ul li {
         font-size: 5px;
+        margin-top: 5px;
         
     }
 
@@ -147,10 +151,10 @@ h3 {
 
     .footer {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         background-color: rgb(29, 28, 28);
         padding: 10px;
-        width: 100vw;
+        width: 95%;
        overflow: scroll;
     }
 
@@ -169,10 +173,11 @@ h3 {
 
     .icons {
         display: flex;
-        width: 200px;
-        justify-content: space-evenly;
-       margin-left: 40px;
+        width: 100%;
+        justify-content: center;
+       margin-left: 10px;
         margin-top: 30px;
+      
 
     }
 
@@ -181,12 +186,13 @@ h3 {
         border-radius: 50%;
         height: 20px;
         width: 20px;
-        
+        justify-content: center;
+        margin-left: 10px;
         text-align: center;
 
     }
     .icon{
-        font-size: 20px;
+        font-size: 10px;
 
     }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Training.module.css";
 
 export default function Training() {
@@ -40,6 +40,24 @@ export default function Training() {
     },
   ];
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const programsRef = useRef(null);
+
+  const handleScroll = (scrollOffset) => {
+    setScrollPosition((prevPosition) => prevPosition + scrollOffset);
+    console.log(scrollOffset);
+  };
+
+  const handleScrollLeft = () => {
+    const scrollOffset = programsRef.current.offsetWidth / 6;
+    handleScroll(-scrollOffset);
+  };
+
+  const handleScrollRight = () => {
+    const scrollOffset = programsRef.current.offsetWidth / 6;
+    handleScroll(scrollOffset);
+  };
+
   return (
     // <<<<<<< HEAD
     <div>
@@ -57,15 +75,40 @@ export default function Training() {
           </p>
         </div>
 
-        <div className={styles.carousel}>
+        <div className={styles.carousel} ref={programsRef}>
           {trainingData.map((item, index) => {
             return (
               <TrainingCard
                 type={trainingData[index].type} //get props from here from down function
                 imgUrl={trainingData[index].imgUrl}
+                scrollPosition={scrollPosition}
               />
             );
           })}
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            backgroundColor: "red",
+            margin: "auto",
+          }}
+        >
+          <button
+            className="scroll-button scroll-left"
+            onClick={handleScrollLeft}
+            style={{ backgroundColor: "black", color: "white" }}
+          >
+            Left⬅️
+          </button>
+          <button
+            className="scroll-button scroll-right"
+            onClick={handleScrollRight}
+            style={{ backgroundColor: "black", color: "white" }}
+          >
+            Right➡️
+          </button>
         </div>
 
         {/* <h1>Trainning Chart :</h1> */}
@@ -121,9 +164,14 @@ export default function Training() {
 }
 
 //pass props from here
-function TrainingCard({ type, imgUrl }) {
+function TrainingCard({ type, imgUrl, scrollPosition }) {
   return (
-    <div className={styles.cardBox}>
+    <div
+      className={styles.cardBox}
+      style={{
+        transform: `translateX(${scrollPosition}px)`,
+      }}
+    >
       <img className={styles.card} src={imgUrl}></img>
       <div id={styles.cardTypeText}>{type}</div>
     </div>

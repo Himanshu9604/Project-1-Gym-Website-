@@ -6,6 +6,7 @@ import { AiOutlineBars } from "react-icons/ai";
 function Navbar() {
   const navigate = useNavigate();
   const linkRef = React.useRef();
+  const joinusRef = React.useRef();
   const property = React.useRef("none");
 
   const location = useLocation();
@@ -22,6 +23,7 @@ function Navbar() {
     const tempData = property.current == "none" ? "flex" : "none";
 
     linkRef.current.style.display = tempData;
+    joinusRef.current.style.display = tempData;
     property.current = tempData;
   };
 
@@ -66,7 +68,11 @@ function Navbar() {
         </ul>
       </div>
       <div>
-        <button className={Styles.joinUSBtn} onClick={handleNavigation}>
+        <button
+          className={Styles.joinUSBtn}
+          ref={joinusRef}
+          onClick={handleNavigation}
+        >
           JoinUS
         </button>
       </div>

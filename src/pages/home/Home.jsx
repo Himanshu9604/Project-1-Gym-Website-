@@ -76,7 +76,7 @@ function Home() {
       </div>
       <img
         src="https://prod-ne-cdn-media.puregym.com/media/818843/beginner-gym-workout-plan_header.jpg?quality=80"
-        style={{ width: "98.1vw", height: "100vh", marginTop: "20px" }}
+        // style={{ width: "98.1vw", height: "100vh", marginTop: "20px" }}
       />
     </div>
   );

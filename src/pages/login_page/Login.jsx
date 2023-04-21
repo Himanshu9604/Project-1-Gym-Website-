@@ -43,7 +43,12 @@ function Login() {
           />
         </div>
         <div className={Styles.mainDivImg}>
-          <h1 style={{ color: "#4FB4CF", fontSize: "60px" }}>Login Page</h1>
+          <h1
+            className={Styles.loginHeading}
+            // style={{ color: "#4FB4CF", fontSize: "60px" }}
+          >
+            Login Page
+          </h1>
           <div className={Styles.formDiv}>
             <input
               placeholder="UserEmail"
