@@ -113,8 +113,8 @@ export default function Training() {
 
         {/* <h1>Trainning Chart :</h1> */}
       </div>
+      <h1 style={{ textAlign: "center" }}>Training Chart </h1>
       <div className={styles.list}>
-        <h1>Training Chart </h1>
         <table>
           <tr>
             <th>Sr No.</th>

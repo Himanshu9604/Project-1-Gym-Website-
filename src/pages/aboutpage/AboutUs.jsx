@@ -8,9 +8,7 @@ function About() {
         <div>
           <iframe
             className={Styles.fullscreenIframes}
-            // width={1000}
             height={440}
-            // class="shogun-video-embed "
             src="https://www.youtube.com/embed/lpxKE4gLn8U?start=0&end=0&autoplay=1&loop=1&mute=1&playlist=lpxKE4gLn8U&version=3&rel=0"
             allowfullscreen
             title="Embedded Youtube Video"

@@ -1,4 +1,4 @@
-
+/* 
 
 .navbar {
   position: -webkit-sticky;
@@ -124,6 +124,182 @@ font-weight: bold;
           }
           #logo{
             font-size: 20px;
+          
+        }
+
+ }
+
+
+
+
+ @media screen and (max-width: 494px) {
+
+  .joinUSBtn{
+margin-top: -10px;
+color: wheat;
+background-color: red;
+padding:5px 10px;
+font-size: 5px;
+font-weight: bold;
+  }
+  .navbar li a {
+    color: #e5c3c3;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 0;
+  
+}
+#logo{
+    font-size: 10px;
+  
+}
+.navbar {
+  width: 95%;
+}
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(50, 29, 40);
+  box-shadow: 0 2px 4px rgba(62, 4, 4, 0.1);
+  padding: -15px;
+  display: flex;
+  z-index: 10;
+    width: 98%;
+    height: 80%;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin-left: -5px;
+  }
+  
+  .navbar ul {
+    display: block;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+  
+    
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar li a {
+    color: #e5c3c3;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  .joinUSBtn{
+margin-top: -10px;
+color: wheat;
+background-color: red;
+padding:10px 20px;
+font-size: 25px;
+font-weight: bold;
+  }
+
+  .navbar li a:hover {
+    color: #7396ad;
+  }
+ .home, .About, .Blogs, .Classes,.JoinUs,.Pricing {
+     float: left;
+     color: rgb(241, 230, 230);
+     text-align: center;
+     padding: 0px;
+     text-decoration: none;
+     font-size: 10px;
+     line-height: 20px;
+     border-radius: 4px;
+     margin-top: 5px;
+ }
+
+
+ .header {
+     display: flex;
+     justify-content: space-around;
+     overflow: hidden;
+     background-color: #f1f1f1;
+     padding: 20px 10px;
+ }
+
+
+ .button {
+     background-color: red;
+     border-radius: 5px;
+     display: flex;
+     border-color: black;
+     justify-content: space-between;
+     margin-top: 5px;
+ }
+
+
+ .header :hover {
+     background-color: cadetblue;
+     color: yellow;
+ }
+
+
+
+ .navIcon{
+    display: none;
+ }
+
+ @media screen and (max-width: 1000px) {
+
+    .navbar ul {
+      display: none;
+        
+      }
+      .navIcon{
+        display:block;
+      }
+      .navbar li a {
+        color: #e5c3c3;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 0;
+        justify-content: center;
+      }
+      .joinUSBtn{
+        margin-top: -10px;
+        color: wheat;
+        background-color: red;
+        padding:5px 10px;
+        font-size: 15px;
+        font-weight: bold;
+        display: none;
+          }
+          #logo{
+            font-size: 10px;
           
         }
 

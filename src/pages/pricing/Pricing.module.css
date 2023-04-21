@@ -33,6 +33,14 @@
   margin-left: 50px;
 }
 
+
+.fullscreenIframes{
+  width: 100%;
+  margin-top: 50px;
+  
+}
+
+
 .card ul {
   list-style: none;
   margin: 0;
