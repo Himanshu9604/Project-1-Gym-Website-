@@ -1,3 +1,6 @@
+
+
+
 .data1{
     text-align: center;
 }
@@ -11,28 +14,98 @@
     background-color: white;
     padding: 34px;  
 }
-
-img{
+ .header {
     width: 100%;
-     height: 100%;
-      margin-top: 20px;
-}
-
-@media screen and (max-width:700px) {
-    img{
-        width: auto;
-        height: auto;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_960_720.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: center; */
+  }
+  
+  .headerContent {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  
+  .txt{
+    
+     color: rgb(14, 243, 6);
+    font-size: 14px;
+    /* margin-left: -900px;
+    margin-bottom: -10px; */
+  }
+  
+  .headerContent h2 {
+    font-size: 4vmin;
+  }
+  
+  
+  .headerContent h1 {
+      font-size: 7vmin;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  
+    .btn{
+      padding: 8px 15px;
+      /* margin-left: -890px; */
+      background: #fc036b;
+      color: whitesmoke;
+      border-radius: 30px;
+    }
+    .btn:hover{
+      background-color:rgb(50, 188, 212);
+      color: black;
+    }
+  .buttonContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    
     }
 
-}
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
 
 
 
-
-
-
-
-
-
-
+    img{
+        width: 100%;
+         height: 100%;
+          margin-top: 20px;
+    }
+    
+    @media screen and (max-width:700px) {
+        img{
+            width: auto;
+            height: auto;
+        }
+        .header {
+            width:auto;
+            height: auto;
+            margin-top: 10px;
+            background-image: url("https://cdn.pixabay.com/photo/2018/04/05/17/21/kettlebell-3293475_960_720.jpg");
+            background-position: bottom;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+          }
+            
+  .txt{
+    
+    color: rgb(14, 243, 6);
+   font-size: 14px;
+  
+ }
+    
+    }

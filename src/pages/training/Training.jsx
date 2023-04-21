@@ -59,7 +59,6 @@ export default function Training() {
   };
 
   return (
-    // <<<<<<< HEAD
     <div>
       <div className={styles.carouselContainer}>
         <div className={styles.trainning}>
@@ -110,8 +109,6 @@ export default function Training() {
             Right➡️
           </button>
         </div>
-
-        {/* <h1>Trainning Chart :</h1> */}
       </div>
       <h1 style={{ textAlign: "center" }}>Training Chart </h1>
       <div className={styles.list}>

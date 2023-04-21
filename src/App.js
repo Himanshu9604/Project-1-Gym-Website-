@@ -3,9 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/aboutpage/AboutUs";
 import "./App.css";
-
-// import Classes from "./pages/Classes";
-// import JoinUs from "./pages/JoinUs";
 import Navbar from "./components/Navbar";
 import Pricing from "./pages/pricing/Pricing";
 import Login from "./pages/login_page/Login";

@@ -13,10 +13,7 @@
     width: 100%;
     color: aliceblue;
     display: flex;
-    /* justify-self: start; */
-    /* justify-content: center; */
-    /* margin-left: 80px; */
-    /* background-color: blue; */
+
     
 }
 .second{
@@ -27,7 +24,6 @@
     display: flex;
     justify-self: start;
     font-size: 20px;
-   /* margin-top: 130px; */
     text-align: center;  
 }
 .leftimg{
@@ -97,10 +93,7 @@
         color: aliceblue;
         display: flex;
         flex-direction: column;
-        /* justify-self: start; */
-        /* justify-content: center; */
-        /* margin-left: 80px; */
-        /* background-color: blue; */
+  
         
     }
     .second{
