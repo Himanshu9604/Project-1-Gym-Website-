@@ -75,9 +75,7 @@ function Login() {
               Log In
             </button>
             <br />
-            <NavLink to="/register" className={Styles.navlink}>
-              Register ?{" "}
-            </NavLink>
+            
           </div>
         </div>
       </div>

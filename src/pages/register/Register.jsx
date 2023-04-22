@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import styles from "./Registration.module.css";
 import { useNavigate } from "react-router";
+import { NavLink } from "react-router-dom";
 
 function Registration() {
   const [name, setFirstName] = useState("");
@@ -232,8 +233,13 @@ function Registration() {
         </div>
         <br />
         <button className={styles.button}>Register</button>
+        <div className={styles.loginav}>
+      <NavLink to="/login">Go to Login page</NavLink>
+      </div>
       </form>
+      
     </div>
+    
   );
 }
 

@@ -76,32 +76,32 @@ function Pricing() {
           </p>
         </div>
         <hr />
-        <h1 style={{ textAlign: "center", fontSize: "75px" }}>
+        <h1 style={{ textAlign: "center", fontSize: "65px" }}>
           {" "}
           🤩Our Seasonal Offers{" "}
         </h1>
         <div className={Style.primg}>
           <img
-            height="570px"
-            width="330px"
+            height="670px"
+            width="430px"
             src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/body-building-design-template-66fb2473ea57cd57caee85f31deccb9a.jpg?ts=1659411801"
-          ></img>
+          />
           <img
             height="570px"
             width="330px"
             src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fitness-%7C-gym-%7C-sports-center-advert-design-template-ef2594f255b94272dde629a5e376b7fd.jpg?ts=1641542396"
-          ></img>
+          />
 
           <img
             height="570px"
-            width="330px"
+            width="430px"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtWEdD84fAJ-PpkpGaDLLFSZC8AoDJAB_Rg&usqp=CAU"
-          ></img>
+          />
           <img
             height="570px"
-            width="330px"
+            width="430px"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdaSjX62AP7TqKLp5k7_oXeZafTCqGpA1Wvw&usqp=CAU"
-          ></img>
+          />
         </div>
       </div>
     </div>

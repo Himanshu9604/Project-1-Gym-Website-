@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route , useHistory} from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/aboutpage/AboutUs";
 import "./App.css";
@@ -13,15 +14,24 @@ import ContactUs from "./pages/contactus/contact";
 import NotFound from "./pages/notfoundpage/NotFound";
 
 function App() {
+  
+  useEffect(() => {
+    if (window.location.pathname !== '/') {
+      window.location.replace('/');
+    }
+  }, []);
+  
+
   return (
+
     <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/joinus" element={<Login />} />
-        <Route path="/register" element={<Registration />} />
+        <Route path="/joinus" element={<Registration />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/training" element={<Training />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/*" element={<NotFound />} />

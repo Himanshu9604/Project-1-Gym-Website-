@@ -17,18 +17,7 @@ function About() {
           </iframe>
         </div>
       </div>
-      <div className={Styles.nopain}>
-        <h1>video</h1>
-        <iframe
-          className={Styles.fullscreenIframes}
-          height="340"
-          src="https://www.youtube.com/embed/-Ov9JTw-59s"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>{" "}
-      </div>
+     
       <div className={Styles.main}>
         <div className={Styles.first}>
           <div className={Styles.leftimg}>
