@@ -22,7 +22,7 @@
     display: block;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     
   
     
@@ -46,6 +46,7 @@ color: wheat;
 background-color: red;
 padding:10px 20px;
 font-size: 25px;
+margin: 12px;
 font-weight: bold;
   }
 

@@ -10,7 +10,7 @@ function About() {
             className={Styles.fullscreenIframes}
             height={440}
             src="https://www.youtube.com/embed/lpxKE4gLn8U?start=0&end=0&autoplay=1&loop=1&mute=1&playlist=lpxKE4gLn8U&version=3&rel=0"
-            allowfullscreen
+            allowFullScreen
             title="Embedded Youtube Video"
           >
             …
@@ -28,7 +28,7 @@ function About() {
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
 
@@ -93,7 +93,7 @@ function About() {
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
@@ -126,7 +126,7 @@ function About() {
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
