@@ -13,13 +13,19 @@ function Footer() {
           <h2>The body achieves what the mind believes.</h2>
           <div className={styles.icons}>
             <div className={styles.ic}>
+            <a href="https://www.facebook.com/learnbuildteach/">
               <FaFacebookF className={styles.icon} />
+              </a>
             </div>
             <div className={styles.ic}>
+             <a href="https://www.instagram.com/reel/CqPgW-_jyUz/?utm_source=ig_web_copy_link">
               <AiFillInstagram className={styles.icon} />
+              </a>
             </div>
             <div className={styles.ic}>
+            <a href="https://www.twitter.com/jamesqquick">
               <AiOutlineTwitter className={styles.icon} />
+              </a>
             </div>
           </div>
         </div>
