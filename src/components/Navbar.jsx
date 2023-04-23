@@ -1,15 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Styles from "./Navbar.module.css";
 import { AiOutlineBars } from "react-icons/ai";
 
-function Navbar() {
+function Navbar({ name, price }) {
   const navigate = useNavigate();
   const linkRef = React.useRef();
   const joinusRef = React.useRef();
   const property = React.useRef("none");
+  const [allDataofSubscription, setAllDataof] = useState(
+    JSON.parse(localStorage.getItem("subscription"))
+  );
+  const [allData, setAllData] = useState(
+    JSON.parse(localStorage.getItem("userData"))
+  );
 
   const location = useLocation();
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [location]);
@@ -69,13 +76,23 @@ function Navbar() {
           </li>
 
           <li>
-            <NavLink to="/pricing">Pricing</NavLink>
-          </li>
-          <li>
             <NavLink to="/training">Training</NavLink>
           </li>
           <li>
             <NavLink to="/contactus">Contact Us</NavLink>
+          </li>
+          <li
+            style={{
+              border: "1px solid",
+              backgroundColor: "black",
+              color: "white",
+              borderRadius: "5px",
+              padding: "3px 3px",
+            }}
+          >
+            <NavLink to="/pricing">
+              {price == 0 ? "Subscribe" : "Subscribed"}
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -87,6 +104,13 @@ function Navbar() {
         >
           JoinUS
         </button>
+        <div className={Styles.userName}>
+          {name && (
+            <span>
+              Welcome {name} {price}{" "}
+            </span>
+          )}
+        </div>
       </div>
       <div onClick={handleLinks} className={Styles.navIcon}>
         <AiOutlineBars fontSize={30} color="white" />
@@ -96,13 +120,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-

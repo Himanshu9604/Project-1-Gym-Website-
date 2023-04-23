@@ -1,16 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, createContext } from "react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Styles from "./Login.module.css";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
-function Login() {
+export let userLoginDataCon = "";
+export let loginNameandSubsription = { id: 1 };
+function Login({ dataFromLogin }) {
   const [useremail, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [allDataofSubscription, setAllDataof] = useState(
+    JSON.parse(localStorage.getItem("subscription"))
+      ? JSON.parse(localStorage.getItem("subscription"))
+      : [{}]
+  );
   const navigate = useNavigate();
 
   const [allData, setAllData] = useState(
     JSON.parse(localStorage.getItem("userData"))
+      ? JSON.parse(localStorage.getItem("userData"))
+      : [{}]
   );
 
   const handleSubmit = (e) => {
@@ -21,14 +31,42 @@ function Login() {
       const dataExistOrNot = allData.find(
         (item) => item.Emailid == useremail && item.password == password
       );
+
       if (dataExistOrNot != undefined) {
-        alert("Login Success");
-        navigate("/");
+        // Swal.fire("Login Success");
+        Swal.fire({
+          icon: "success",
+          title: "Success...",
+          text: "Login Successful!",
+        });
+        userLoginDataCon = dataExistOrNot.Emailid;
+
+        // console.log(allDataofSubscription);
+
+        const isSubscribed = allDataofSubscription.find(
+          (item) => item.EmailId == useremail
+        );
+
+        if (isSubscribed != undefined) {
+          navigate("/training");
+          dataFromLogin(dataExistOrNot.firstName, isSubscribed.price);
+        } else {
+          dataFromLogin(dataExistOrNot.firstName, 0);
+          navigate("/");
+        }
       } else {
-        alert("Login Failed");
+        Swal.fire({
+          icon: "error",
+          title: "Opps...",
+          text: "Login Failed!",
+        });
       }
     } else {
-      alert("Login Failed");
+      Swal.fire({
+        icon: "error",
+        title: "Opps...",
+        text: "Login Failed!",
+      });
     }
   };
 
@@ -75,7 +113,6 @@ function Login() {
               Log In
             </button>
             <br />
-            
           </div>
         </div>
       </div>

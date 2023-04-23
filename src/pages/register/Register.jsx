@@ -130,7 +130,7 @@ function Registration() {
         setEmailError(false);
         setPassError(false);
         console.log("form submitted");
-        alert("Register Successfully");
+
         let newData = [
           ...arr,
           {
@@ -150,7 +150,14 @@ function Registration() {
         lName.current = "";
         email1.current = "";
         pass.current = "";
-        navigate("/");
+        const alertBox = window.confirm(
+          "Register Successfully, Are you want our Subscription."
+        );
+        if (alertBox) {
+          navigate("/pricing");
+        } else {
+          navigate("/");
+        }
       }
     }
 

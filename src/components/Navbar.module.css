@@ -43,11 +43,12 @@
   .joinUSBtn{
 margin-top: -10px;
 color: wheat;
-background-color: red;
+background-color: rgba(250, 7, 7, 0.888);
 padding:10px 20px;
 font-size: 25px;
 margin: 12px;
 font-weight: bold;
+border-radius: 100px;
   }
 
   .navbar li a:hover {
@@ -94,6 +95,9 @@ font-weight: bold;
 
  .navIcon{
     display: none;
+ }
+ .userName{
+  color: white;
  }
 
  @media screen and (max-width: 1000px) {
@@ -156,5 +160,12 @@ font-weight: bold;
 }
 .navbar {
   width: 95%;
+}
+.userName{
+  color: white;
+  font-size: 8px;
+ }
+ .navbar li{
+  margin: 0 2px;
 }
  }

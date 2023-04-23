@@ -1,9 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import Style from "./Pricing.module.css";
+import { userLoginDataCon } from "../login_page/Login";
+import Swal from "sweetalert2";
 
-function Pricing() {
+function Pricing({ name, dataFromLogin }) {
+  const [isSubscribed, setIsSubscribed] = useState(true);
+  const [allDataof, setAllDataof] = useState(
+    JSON.parse(localStorage.getItem("subscription"))
+  );
+
+  function handleSubmission(price) {
+    if (name == "") {
+      alert("Please login first on clicking join us button");
+    } else {
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Subscribe!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          if (allDataof) {
+            localStorage.setItem(
+              "subscription",
+              JSON.stringify([
+                ...allDataof,
+                {
+                  EmailId: userLoginDataCon,
+                  price: price,
+                  subscribed: isSubscribed,
+                },
+              ])
+            );
+            dataFromLogin(name, price);
+            console.log(userLoginDataCon);
+          } else {
+            localStorage.setItem(
+              "subscription",
+              JSON.stringify([
+                {
+                  EmailId: userLoginDataCon,
+                  price: price,
+                  subscribed: isSubscribed,
+                },
+              ])
+            );
+            // console.log(userLoginDataCon, "DATA");
+          }
+        }
+      });
+      // }
+    }
+    // console.log(userLoginDataCon);
+  }
+
   return (
     <div>
+      <h1>Welcome to Pricing Section</h1>
       <div className={Style.primgtop}>
         <iframe
           className={Style.fullscreenIframes}
@@ -26,9 +82,9 @@ function Pricing() {
           </ul>
           <button
             style={{ padding: "10px 30px", fontWeight: "bold" }}
-            onClick={() => alert("Click on pricing")}
+            onClick={() => handleSubmission(20)}
           >
-            Get Started
+            Subscribe
           </button>
         </div>
 
@@ -52,9 +108,9 @@ function Pricing() {
               fontSize: "20px",
               color: "white",
             }}
-            onClick={() => alert("Click on pricing")}
+            onClick={() => handleSubmission(90)}
           >
-            Get Started
+            Subscribe
           </button>
         </div>
 
