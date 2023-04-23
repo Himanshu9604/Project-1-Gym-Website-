@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router";
+import Swal from "sweetalert2";
 
 function Home() {
   const navigate = useNavigate();
@@ -18,7 +19,10 @@ function Home() {
           </h2>
 
           <div className={styles.buttonContainer}>
-            <button className={styles.btn} onClick={() => alert("Learn More")}>
+            <button
+              className={styles.btn}
+              onClick={() => Swal.fire("Welcome to Gym")}
+            >
               Learn More
             </button>
           </div>
